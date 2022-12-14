@@ -132,7 +132,7 @@ public class SoundManager : MonoBehaviour
         if (MusicStatus == 0)
         {
             MusicStatus = 1;
-            PlayerPrefs.SetInt("Music", SoundStatus);
+            PlayerPrefs.SetInt("Music", Musictatus);
             return true;
         }
         else if (MusicStatus == 1)
