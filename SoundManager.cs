@@ -28,11 +28,11 @@ public class SoundManager : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
 
-        if (PlayerPrefs.HasKey("Sound"))
+        if (!PlayerPrefs.HasKey("Sound"))
         {
             PlayerPrefs.SetInt("Sound",1);
         }
-        if (PlayerPrefs.HasKey("Music"))
+        if (!PlayerPrefs.HasKey("Music"))
         {
             PlayerPrefs.SetInt("Music", 1);
         }
